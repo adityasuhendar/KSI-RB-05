@@ -7,7 +7,7 @@
                 <div class="md:flex md:items-center mb-3">
                     <div class="md:w-1/3">
                         <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4">
-                            Name : 
+                            Nama :
                         </label>
                     </div>
                     <div class="md:w-2/3">
@@ -27,7 +27,7 @@
                 <div class="md:flex md:items-center mb-3">
                     <div class="md:w-1/3">
                         <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4">
-                            Class :
+                            Kelas :
                         </label>
                     </div>
                     <div class="md:w-2/3 block text-gray-600 font-bold">
@@ -37,7 +37,7 @@
                 <div class="md:flex md:items-center mb-3">
                     <div class="md:w-1/3">
                         <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4">
-                            Roll Number :
+                            Mata Pelajaran :
                         </label>
                     </div>
                     <div class="md:w-2/3">
@@ -47,7 +47,7 @@
                 <div class="md:flex md:items-center mb-3">
                     <div class="md:w-1/3">
                         <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4">
-                            Phone :
+                            Nomor Handphone :
                         </label>
                     </div>
                     <div class="md:w-2/3">
@@ -57,7 +57,7 @@
                 <div class="md:flex md:items-center mb-3">
                     <div class="md:w-1/3">
                         <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4">
-                            Gender :
+                            Jenis Kelamin :
                         </label>
                     </div>
                     <div class="md:w-2/3">
@@ -67,7 +67,7 @@
                 <div class="md:flex md:items-center mb-3">
                     <div class="md:w-1/3">
                         <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4">
-                            Date of Birth :
+                            Tanggal Lahir :
                         </label>
                     </div>
                     <div class="md:w-2/3">
@@ -77,7 +77,7 @@
                 <div class="md:flex md:items-center mb-3">
                     <div class="md:w-1/3">
                         <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4">
-                            Current Address :
+                            Alamat Domisili :
                         </label>
                     </div>
                     <div class="md:w-2/3">
@@ -87,7 +87,7 @@
                 <div class="md:flex md:items-center mb-3">
                     <div class="md:w-1/3">
                         <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4">
-                            Permanent Address :
+                            Alamat Tetap :
                         </label>
                     </div>
                     <div class="md:w-2/3">
@@ -98,7 +98,7 @@
                 <div class="md:flex md:items-center mb-3">
                     <div class="md:w-1/3">
                         <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4">
-                            Student's Parent :
+                            Orangtua Siswa :
                         </label>
                     </div>
                     <div class="md:w-2/3 block text-gray-600 font-bold">
@@ -108,7 +108,7 @@
                 <div class="md:flex md:items-center mb-3">
                     <div class="md:w-1/3">
                         <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4">
-                            Parent's Email :
+                            Email Orangtua :
                         </label>
                     </div>
                     <div class="md:w-2/3 block text-gray-600 font-bold">
@@ -118,7 +118,7 @@
                 <div class="md:flex md:items-center mb-3">
                     <div class="md:w-1/3">
                         <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4">
-                            Parent's Phone :
+                            No. Hp Orangtua :
                         </label>
                     </div>
                     <div class="md:w-2/3 block text-gray-600 font-bold">
@@ -128,24 +128,24 @@
                 <div class="md:flex md:items-center mb-3">
                     <div class="md:w-1/3">
                         <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4">
-                            Parent's Address :
+                            Alamat Orangtua :
                         </label>
                     </div>
                     <div class="md:w-2/3 block text-gray-600 font-bold">
                         <span class="text-gray-600 font-bold">{{ $student->parent->current_address }}</span>
                     </div>
                 </div>
-    
-    
-            </div>   
-            
-            
+
+
+            </div>
+
+
 
             <div class="w-full sm:w-1/2 mr-2 mb-6">
                 <div class="flex items-center bg-gray-600">
-                    <div class="w-1/3 text-left text-white py-2 px-4 font-semibold">Code</div>
-                    <div class="w-1/3 text-left text-white py-2 px-4 font-semibold">Subject</div>
-                    <div class="w-1/3 text-right text-white py-2 px-4 font-semibold">Teacher</div>
+                    <div class="w-1/3 text-left text-white py-2 px-4 font-semibold">kode</div>
+                    <div class="w-1/3 text-left text-white py-2 px-4 font-semibold">Mata Pelajaran</div>
+                    <div class="w-1/3 text-right text-white py-2 px-4 font-semibold">Guru</div>
                 </div>
                 @foreach ($student->class->subjects as $subject)
                     <div class="flex items-center justify-between border border-gray-200 -mb-px">
@@ -155,22 +155,22 @@
                     </div>
                 @endforeach
 
-                
+
             </div>
 
-            
+
 
         </div>
 
         <div class="w-full px-0 md:px-6 py-4">
             <div>
-                <h2 class="text-gray-700 uppercase font-bold">My Attendance Record</h2>
+                <h2 class="text-gray-700 uppercase font-bold">Riwayat Kehadiran</h2>
             </div>
             <div class="flex items-center bg-gray-600">
-                <div class="w-1/4 text-left text-white py-2 px-4 font-semibold">Date</div>
-                <div class="w-1/4 text-left text-white py-2 px-4 font-semibold">Class</div>
-                <div class="w-1/4 text-left text-white py-2 px-4 font-semibold">Teacher</div>
-                <div class="w-1/4 text-right text-white py-2 px-4 font-semibold">Attendance</div>
+                <div class="w-1/4 text-left text-white py-2 px-4 font-semibold">Tanggal</div>
+                <div class="w-1/4 text-left text-white py-2 px-4 font-semibold">Pelajaran</div>
+                <div class="w-1/4 text-left text-white py-2 px-4 font-semibold">Guru</div>
+                <div class="w-1/4 text-right text-white py-2 px-4 font-semibold">Kehadiran</div>
             </div>
             @foreach ($student->attendances as $attendance)
                 <div class="flex items-center justify-between border border-gray-200 -mb-px">
@@ -179,9 +179,9 @@
                     <div class="w-1/4 text-left text-gray-600 py-2 px-4 font-medium">{{ $attendance->teacher->user->name }}</div>
                     <div class="w-1/4 text-right text-gray-600 py-2 px-4 font-medium">
                         @if($attendance->attendence_status)
-                            <span class="text-xs text-white bg-green-500 px-2 py-1 rounded-custom">P</span>
+                            <span class="text-xs text-white bg-green-500 px-2 py-1 rounded-custom">Hadir</span>
                         @else
-                            <span class="text-xs text-white bg-red-500 px-2 py-1 rounded-custom">A</span>
+                            <span class="text-xs text-white bg-red-500 px-2 py-1 rounded-custom">Absen</span>
                         @endif
                     </div>
                 </div>

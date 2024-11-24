@@ -5,7 +5,7 @@
 
         <div class="flex items-center justify-between mb-6">
             <div>
-                <h2 class="text-gray-700 uppercase font-bold">Add New Class</h2>
+                <h2 class="text-gray-700 uppercase font-bold">Tambah Kelas Baru</h2>
             </div>
             <div class="flex flex-wrap items-center">
                 <a href="{{ route('classes.index') }}" class="bg-gray-700 text-white text-sm uppercase py-2 px-4 flex items-center rounded">
@@ -21,7 +21,7 @@
                 <div class="md:flex md:items-center mb-6">
                     <div class="md:w-1/3">
                         <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4">
-                            Class Name
+                            Nama Mata Pelajaran
                         </label>
                     </div>
                     <div class="md:w-2/3">
@@ -53,7 +53,7 @@
                     <div class="md:w-2/3 block text-gray-600 font-bold">
                         <div class="relative">
                             <select name="teacher_id" class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state">
-                                <option value="">--Select Teacher--</option>
+                                <option value="">--Pilih Guru--</option>
                                 @foreach ($teachers as $teacher)
                                     <option value="{{ $teacher->id }}">{{ $teacher->user->name }}</option>
                                 @endforeach
@@ -85,11 +85,11 @@
                     <div class="md:w-1/3"></div>
                     <div class="md:w-2/3">
                         <button class="shadow bg-blue-500 hover:bg-blue-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="submit">
-                            Submit
+                            Kirim
                         </button>
                     </div>
                 </div>
-            </form>        
+            </form>
         </div>
         <!-- Log on to codeastro.com for more projects -->
     </div>
